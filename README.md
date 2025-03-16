@@ -4,7 +4,7 @@
 # AITalkers Dual Agent Reasoning Framework
 LLM Framework for Two AI Agents Debate/Reasoning to reach Consensus Answers
 
-
+<br><br>
 ## MIT License
 
 Copyright (c) 2025 alby13
