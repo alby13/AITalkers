@@ -1,3 +1,6 @@
+<center><img src="https://github.com/alby13/AITalkers/blob/main/ai-talkers-logo.jpg"></center>
+
+
 # AITalkers Dual Agent Reasoning Framework
 LLM Framework for Two AI Agents Debate/Reasoning to reach Consensus Answers
 
