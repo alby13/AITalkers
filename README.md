@@ -4,9 +4,19 @@
 # AITalkers Dual Agent Reasoning Framework
 LLM Framework for Two AI Agents Debate/Reasoning to reach Consensus Answers
 
+AITalkers enables two AI agents that are configurable to use providers like OpenAI, Anthropic, or Gemini to engage in a structured reasoning debate. A moderator agent analyzes the final answers to review them and determine whether consensus has been reached.
+
 
 <br><br>
 ## This is an early version release that still may have bugs and requires additional testing and refinement.
+
+## Features
+
+- **Dual AI Debate:** Two agents debate on a given prompt, iteratively refining their responses.
+- **Moderator Analysis:** An AI moderator checks for consensus between the agents using JSON-based analysis.
+- **Customizable Providers:** Select among OpenAI, Anthropic, and Gemini for both agents and the moderator.
+- **Interactive UI:** A user-friendly Streamlit interface for configuration, debate execution, and viewing results.
+
 
 <br><br>
 ## Conversational AI Agents:
@@ -25,16 +35,96 @@ This framework is agentic in that it leverages independent, stateful agents that
 
 
 <br><br>
-## Install
+## Installation
 Requires Python 3.10+
 
 Before using you will have to set up the exact AI model name of each type that you would like to use in the code (OpenAI, Claude, Gemini).
+
+
+### Prerequisites
+
+- Python 3.10 or later
+- Pip (Python package manager)
+  
+- (Optional) Virtual environment tool (such as `venv` or `conda`)
+
+<br><br>
+### Clone the Repository
+
+Open your terminal or command prompt and run:
+
+```bash
+git clone https://github.com/alby13/AITalkers.git
+cd AITalkers
+```
+
+<br><br>
+### Installing on Windows
+
+Open Command Prompt or PowerShell.
+
+(Optional) Create and activate a virtual environment:
+
+```
+python -m venv venv
+venv\Scripts\activate
+```
+
+Install Dependencies:
+
+If the requirements.txt file is present in your directory, run:
+
+```
+pip install -r requirements.txt
+```
+
+
+### Installing on Linux
+
+Open a Terminal.
+
+(Optional) Create and activate a virtual environment:
+
+```
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Configure API Keys:
+Create a .env file in the repository root and add your API keys:
+
+```
+OPENAI_API_KEY=your_openai_key
+ANTHROPIC_API_KEY=your_anthropic_key
+GEMINI_API_KEY=your_gemini_key
+```
+
+Install Dependencies:
+
+If the requirements.txt file is present in your directory, run:
+```
+pip install -r requirements.txt
+```
+
+Otherwise, install the required packages manually:
+
+```
+pip install streamlit requests python-dotenv
+```
+
+## Usage
+After installation and configuration, you can start the AITalkers application using Streamlit.
+
+```
+streamlit run AITalkers.py
+```
 
 <br><br>
 ## Future Improvements
 
 - Early Consensus Checking
 - History/Records/Logging
+- Easier way for user to specify AI Models
 
 - Streamlit UI Enhancements
 Add a progress bar for the debate:
@@ -43,6 +133,10 @@ Add a progress bar for the debate:
 for turn in range(max_turns):
     progress_bar.progress((turn + 1) / max_turns)
     # Debate logic...</code>
+    
+<br><br>
+## Contributing & Evaluations
+Contributions and Evaluations are welcome! If you have any ideas for improvements or encounter any issues, please open an issue or submit a pull request.
 
 <br><br>
 ## MIT License
