@@ -7,11 +7,13 @@ LLM Framework for Two AI Agents Debate/Reasoning to reach Consensus Answers
 
 <br><br>
 # Note: Readme will be updated soon.
-## This is an early version release that still may have bugs and requires additional testing.
+## This is an early version release that still may have bugs and requires additional testing and refinement.
 
 <br><br>
 ## Install
 Requires Python 3.10+
+
+Before using you will have to set up the exact AI model name of each type that you would like to use in the code (OpenAI, Claude, Gemini).
 
 
 ## Future Improvements
