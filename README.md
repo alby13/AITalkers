@@ -6,8 +6,21 @@ LLM Framework for Two AI Agents Debate/Reasoning to reach Consensus Answers
 
 
 <br><br>
-# Note: Readme will be updated soon.
 ## This is an early version release that still may have bugs and requires additional testing and refinement.
+
+<br><br>
+## Conversational AI Agents:
+
+- Independent Agent Classes:
+Each AI agent (OpenAIAgent, AnthropicAgent, ModeratorAgent) is defined as an independent class with its own state, memory (conversation history), and behavior (response generation). This encapsulation is a core trait of agentic systems, where each “agent” can operate based on its internal logic.
+
+- Autonomous Response Generation:
+The agents are designed to generate responses based on recent context. They update their own state (by maintaining full conversation history) and handle context truncation autonomously, which is a hallmark of agentic behavior.
+
+- Centralized Orchestration with Decentralized Autonomy:
+The agents operate independently, their interactions are coordinated by a central Debate Orchestrator. This orchestrator manages turn-taking and the overall debate flow. <br>This framework's design intentionally imposes structure to maintain coherent debate dynamics, which is common in many practical multi-agent systems.
+
+
 
 <br><br>
 ## Install
@@ -15,7 +28,7 @@ Requires Python 3.10+
 
 Before using you will have to set up the exact AI model name of each type that you would like to use in the code (OpenAI, Claude, Gemini).
 
-
+<br><br>
 ## Future Improvements
 
 - Early Consensus Checking
