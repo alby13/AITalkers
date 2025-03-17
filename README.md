@@ -4,6 +4,29 @@
 # AITalkers Dual Agent Reasoning Framework
 LLM Framework for Two AI Agents Debate/Reasoning to reach Consensus Answers
 
+
+<br><br>
+# Note: Readme will be updated soon.
+## This is an early version release that still may have bugs and requires additional testing.
+
+<br><br>
+## Install
+Requires Python 3.10+
+
+
+## Future Improvements
+
+- Early Consensus Checking
+- History/Records/Logging
+
+- Streamlit UI Enhancements
+Add a progress bar for the debate:
+
+<code>progress_bar = st.progress(0)
+for turn in range(max_turns):
+    progress_bar.progress((turn + 1) / max_turns)
+    # Debate logic...</code>
+
 <br><br>
 ## MIT License
 
