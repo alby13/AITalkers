@@ -20,6 +20,8 @@ The agents are designed to generate responses based on recent context. They upda
 - Centralized Orchestration with Decentralized Autonomy:
 The agents operate independently, their interactions are coordinated by a central Debate Orchestrator. This orchestrator manages turn-taking and the overall debate flow. <br>This framework's design intentionally imposes structure to maintain coherent debate dynamics, which is common in many practical multi-agent systems.
 
+#### Agentic Framework:
+This framework is agentic in that it leverages independent, stateful agents that act according to their own internal logic. At the same time, it uses a central orchestrator to coordinate interactions, making it a hybrid design—agentic at the individual level but structured at the system level. This balance is desirable in this application for debates, where both autonomy and coordination are key.
 
 
 <br><br>
