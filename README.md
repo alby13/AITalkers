@@ -122,9 +122,11 @@ streamlit run AITalkers.py
 <br><br>
 ## Future Improvements
 
+- Streaming AI Answers, and Viewing Each Turn's Responses in real-time.
+- Internet Search (Perplexity is an evolving AI answer engine)
 - Early Consensus Checking
 - History/Records/Logging
-- Easier way for user to specify AI Models
+- Easier way for user to specify AI Models as API options
 
 - Streamlit UI Enhancements
 Add a progress bar for the debate:
